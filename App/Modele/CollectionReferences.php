@@ -1,20 +1,23 @@
 <?php
 
 class CollectionReferences{
+	var $collection; 
+		
+	function __construct(){
+		
+	}
 
-	
-
-	public void add(){
+	function add(){
 
 	}
 
-	public void remove(){
+	function remove(){
 
 	}
 
-	public void set(){
+	function set(){
 
-	}	
+	}
 }
 
 ?>

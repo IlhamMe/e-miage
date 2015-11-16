@@ -2,48 +2,48 @@
 
 class Reference{
 
-	private String $nom;
-	private String $auteur;
-	private String $date;
-	private String $lien;
+	var $nom;
+	var $auteur;
+	var $date;
+	var $lien;
 
-	public void __construct(String $n, String $a, Strin $d, String $l){
+	function __construct(String $n, String $a, Strin $d, String $l){
 		$this->nom = $n;
 		$this->auteur = $a;
 		$this->date = $d;
 		$this->lien = $l;
 	}
 
-	public void setNom(){
-
+	function setNom($n){
+		$this->nom = $n;
 	}
 
-	public String getNom(){
+	function getNom(){
 		return $this->nom;
 	}
 
-	public void setAuteur(){
-
+	function setAuteur($a){
+		$this->auteur = $a;
 	}
 
-	public String getAuteur(){
+	function getAuteur(){
 		return $this->auteur;
 	}
 
-	public void setDate(){
-
+	function setDate($d){
+		$this->date = $d;
 	}
 
-	public String getDate(){
-		return $this->login;
+	function getDate(){
+		return $this->date;
 	}
 
-	public void setLien(){
-
+	function setLien($l){
+		$this->lien = $l;
 	}
 
-	public String getLien()){
-		return $this->mdp;
+	function getLien()){
+		return $this->lien;
 	}
 }
 

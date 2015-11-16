@@ -1,14 +1,14 @@
 <?php 
 
-class Utilisateurs{
+class Utilisateur{
 
-	private String $nom;
-	private String $prenom;
-	private String $login;
-	private String $mdp;
-	private String $email;
+	var $nom;
+	var $prenom;
+	var $login;
+	var $mdp;
+	var $email;
 
-	public void __construct(String $n, String $p, Strin $l, String $password, String $e){
+	function __construct($n, $p, $l, $password, $e){
 		$this->nom = $n;
 		$this->prenom = $p;
 		$this->login = $l;
@@ -16,61 +16,59 @@ class Utilisateurs{
 		$this->email = $e;
 	}
 
-	public boolean addRef(){
-
+	function addRef(){
+		// ajouter un nouveau lien de referances
 	}
 
-	public boolean setCategorie(){
-
+	function setCategorie(){
+		// modifier une catégorie
 	}
 
-	public boolean	connecte(){
-
+	function connecte(){
+		// se connecter
 	}
 
-	public boolean deconnecte(){
-
+	function deconnecte(){
+		//se deconnecter
 	}
 
-	public void setNom(){
-
+	function setNom($n){
+		$this->nom = $n;
 	}
 
-	public String getNom(){
+	function getNom(){
 		return $this->nom;
 	}
 
-	public void setPrenom(){
-
+	function setPrenom($p){
+		$this->prenom = $p;
 	}
 
-	public String getPrenom(){
+	function getPrenom(){
 		return $this->prenom;
 	}
 
-	public void setLogin(){
-
+	function setLogin($l){
+		$this->login = $l;
 	}
 
-	public String getLogin(){
+	function getLogin(){
 		return $this->login;
 	}
 
-	public void setMdp(){
-
+	function setMdp($m){
+		$this->mdp = $m;
 	}
 
-	public String getMdp(){
+	function getMdp(){
 		return $this->mdp;
 	}
 
-	public void setEmail(){
-
+	function setEmail($e){
+		$this->email = $e;
 	}
 
-	public String getEmail(){
+	function getEmail(){
 		return $this->email;
 	}
 }
-
-?>
