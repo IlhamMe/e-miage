@@ -2,6 +2,7 @@
 
 class Utilisateur{
 
+	var $id;
 	var $nom;
 	var $prenom;
 	var $login;
@@ -30,6 +31,14 @@ class Utilisateur{
 
 	function deconnecte(){
 		//se deconnecter
+	}
+
+	function setId($n){
+		$this->id = $n;
+	}
+
+	function getId(){
+		return $this->id;
 	}
 
 	function setNom($n){

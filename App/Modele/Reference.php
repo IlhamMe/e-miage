@@ -2,6 +2,7 @@
 
 class Reference{
 
+	var $id;
 	var $nom;
 	var $auteur;
 	var $date;
@@ -12,6 +13,14 @@ class Reference{
 		$this->auteur = $a;
 		$this->date = $d;
 		$this->lien = $l;
+	}
+
+	function setId($n){
+		$this->id = $n;
+	}
+
+	function getId(){
+		return $this->id;
 	}
 
 	function setNom($n){
