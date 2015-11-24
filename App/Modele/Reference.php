@@ -8,7 +8,7 @@ class Reference{
 	var $date;
 	var $lien;
 
-	function __construct(String $n, String $a, Strin $d, String $l){
+	function __construct($n, $a, $d, $l){
 		$this->nom = $n;
 		$this->auteur = $a;
 		$this->date = $d;
@@ -51,7 +51,7 @@ class Reference{
 		$this->lien = $l;
 	}
 
-	function getLien()){
+	function getLien(){
 		return $this->lien;
 	}
 }

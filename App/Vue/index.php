@@ -1,6 +1,0 @@
-<?php 
-
-echo "connexion réussi";
-
-
- ?>

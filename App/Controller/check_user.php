@@ -1,5 +1,9 @@
 <?php 
 
+// Démarage d'une séssion utilisateur
+
+session_start();
+
 include("../Modele/Base.php");
 
 $base = new Base('e-miage', 'localhost', 'root', 'root');
@@ -16,7 +20,8 @@ $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
 $row = mysql_fetch_array($req);
 
 if (!empty($row)) { // si différents de vide c'est que l'utilisateur et le login sont correctes
-	header('Location: ../Vue/index.php');
+	$_SESSION['auteur'] = $row['prenom'].' '.$row['nom'];
+	header('Location: ../Vue/index_pc.php');
 }
 else{ // sinon on retourne à la page de connexion pour réessayer
 	header('Location: ../Vue/login.php');
