@@ -102,38 +102,3 @@
   background: #B5E1EA;
 }
 
-
- html{
-  background: #727476;
-  font-family: "Times New Roman", Times, "Liberation Serif", FreeSerif, serif;
-  font-family: Georgia, "DejaVu Serif", Norasi, serif;
-
-}
-#content {
-  background-color: #FAFAFA;;
-  margin: 5px 152px;
-  padding: 0px 10px;
-  -moz-box-shadow: 10px 10px 5px 0px #cfcfcf;
--webkit-box-shadow: 10px 10px 5px 0px #cfcfcf;
--o-box-shadow: 10px 10px 5px 0px #cfcfcf;
-box-shadow: 10px 10px 5px 0px #cfcfcf;
-}
-table {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    text-align: left;
-    font-size: 13;
-    font-family: Verdana;
-    color: #222222;
-    line-height: 1.2;
-    border-spacing: 2;
-    empty-cells: show;
-    background-color: #F0F0F0;
-    border-color: #9CB7BE;
-}
-#content h2{
- color: #66CDFE;
- padding-top: 30;
- margin-top: 30;
- 
-}
