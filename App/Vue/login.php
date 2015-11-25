@@ -1,7 +1,14 @@
+<?php 
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Se connecter à l'espace privée</title>
+	<meta charset="UTF-8">
 </head>
 <body>
 	<form action="../Controller/check_user.php" method="post">
