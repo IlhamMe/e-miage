@@ -36,13 +36,14 @@ include("../../Controller/check_ref.php");
 		<th>Auteur</th>
 		<th>Lien</th>
 		<th>Date</th>
+		<th>Action</th>
 	</thead>
 	<tbody>
 <?php
 	// Affichage des references existante 
 	while($row = mysql_fetch_array($req)){
 		print("<tr>");
-		print("<td>".$row['nom']."</td>"."<td>".$row['auteur']."</td>"."<td><a href='".$row['lien']."'>".$row['lien']."</a></td>"."<td>".$row['date']."</td>");
+		print("<td>".$row['nom']."</td>"."<td>".$row['auteur']."</td>"."<td><a href='".$row['lien']."'>".$row['lien']."</a></td>"."<td>".$row['date']."</td>"."<td><a href='../../Controller/suppr_ref.php?id=".$row['id']."'>x</a></td>");
 		print('</tr>');
 	}
 ?>
