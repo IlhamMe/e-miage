@@ -2,8 +2,7 @@
 
 session_start();
 
-
-include("../../Controller/check_ref.php");
+include("../../Controller/check_cat.php");
 
 ?>
 
@@ -23,5 +22,41 @@ include("../../Controller/check_ref.php");
 			<li><a href="contents.php">Gérer les contenus du site</a></li>
 		</ul>
 	</nav>
+	<form action="../../Controller/addcat.php" method="post">
+	  Titre: <input type="text" name="titre"><br>
+	  <input type="submit" value="Ajouter une catégorie">
+	</form>
+</div>
+
+<form action="contents.php" method="post">
+	<ul>
+	<?php
+		// Affichage des references existante 
+		while($row = mysql_fetch_array($req)){
+			print("<li>");
+			print("<input type='submit' name='titre' value='".$row['titre']."'>");
+			print("</input>");
+			print('</li>');
+		}
+	?>
+	</ul>
+</form>
+
+<?php if(isset($_POST['titre'])){ ?>
+		<?php 
+			include("../../Controller/getcat.php");
+			$row = mysql_fetch_array($req);
+		?>
+
+			<form action="../../Controller/check_formcat.php" method="post">
+				<input type="text" name="titre" value="<?php echo $row['titre'] ?>"></input><br>
+				<input type="text" name="id" value="<?php echo $row['id'] ?>"></input><br>
+				<textarea name="contenu"><?php echo $row['contenu'] ?></textarea><br>
+				<input type="submit" name="set" value="Mettre à jour"></input><br>
+				<input type="submit" name="remove" value="Supprimer cette catégorie"></input>
+			</form>
+
+<?php } ?>
+
 </body>
 </html>
