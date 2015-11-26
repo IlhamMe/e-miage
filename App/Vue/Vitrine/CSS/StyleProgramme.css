@@ -1,4 +1,45 @@
+td, th{
+	border: solid;
+	border-width: 1px;
+	padding: 10px;
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 10px; 
+border-color: #9CB7BE;
+}
 
+th: first-child, td:first-child{
+	width:20%;
+  background-color: #BBE0E9;
+}
+
+th:last-child, td:last-child{
+	width: 80%;
+}
+td:first-child{
+  background-color: #BBE0E9;
+}
+td:last-child{
+  background-color: #F0F0F0;
+}
+
+
+
+html{
+	background: #727476;
+	font-family: "Times New Roman", Times, "Liberation Serif", FreeSerif, serif;
+	font-family: Georgia, "DejaVu Serif", Norasi, serif;
+
+}
+.content {
+	background-color: #FAFAFA;;
+	margin: 5px 152px;
+	padding: 0px 30px;
+	-moz-box-shadow: 10px 10px 5px 0px #cfcfcf;
+-webkit-box-shadow: 10px 10px 5px 0px #cfcfcf;
+-o-box-shadow: 10px 10px 5px 0px #cfcfcf;
+box-shadow: 10px 10px 5px 0px #cfcfcf;
+}
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 #cssmenu,
 #cssmenu ul,
@@ -103,3 +144,45 @@
   background: #B5E1EA;
 }
 
+
+
+
+/* table {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-align: left;
+    font-size: 13;
+    font-family: Verdana;
+    color: #222222;
+    line-height: 1.2;
+    border-spacing: 2;
+    empty-cells: show;
+    background-color: #F0F0F0;
+    border-color: #9CB7BE;
+}*/
+#content{
+
+	margin:50px 0px 0px 0px;
+
+}
+table{
+	margin:50px 0px 0px 0px;
+}
+p{
+  border-top: 3px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom:0px;
+  border-color:#BBE0E9;
+  border-style: dotted;
+  padding-top: 20;
+  color: gray;
+
+}
+h2{
+  
+  text-transform: lowercase;
+  padding-bottom: -2;
+  background-color: #FAFAFA;
+  color:#626C6F;
+}
