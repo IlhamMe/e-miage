@@ -226,3 +226,19 @@ p{
   line-height: 1.4;
 
 }
+article{
+  padding-top: 20;
+  
+  text-align: justify;
+  font-size: 16;
+ font-family: verdana;
+  color: #626C6F;
+ line-height: 1.4;
+
+}
+h5{
+   font-family: verdana;
+  color: #626C6F;
+  text-decoration: underline;
+
+}
