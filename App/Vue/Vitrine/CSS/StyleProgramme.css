@@ -245,7 +245,9 @@ h5{
 #nav #en-cours a{
     background: #B5E1EA;
     color: #ffffff;
-
+    font-family: Raleway, sans-serif;
+ 
+  font-size: 10px;
     -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
