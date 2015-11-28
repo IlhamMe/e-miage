@@ -195,6 +195,7 @@ p{
   text-decoration: none;
   letter-spacing: 2;
  
+<<<<<<< HEAD
   
 }
  /*p
@@ -219,10 +220,76 @@ p{
 #p, #ul{
   padding-top: 20;
   
+=======
+  
+}
+ /*p
+{
+  margin: 0 0 0 10;
+  padding: 0 0 0 0;
+  text-align: justify;
+  font-size: 12;
+  font-family: Verdana;
+  color: #626C6F;
+  line-height: 1.4;
+}*/
+ b {
+    font-weight: bold;
+}
+#titre_page
+{
+  height: 30;
+  width: 780;
+
+}
+#p, #ul{
+  padding-top: 20;
+  
+>>>>>>> e8c9774e6e26189151c1293752178ecfb0270c76
   text-align: justify;
   font-size: 16;
  font-family: verdana;
   color: #626C6F;
   line-height: 1.4;
 
+<<<<<<< HEAD
 }
+=======
+}
+article{
+  padding-top: 20;
+  
+  text-align: justify;
+  font-size: 16;
+ font-family: verdana;
+  color: #626C6F;
+ line-height: 1.4;
+
+}
+h5{
+   font-family: verdana;
+  color: #626C6F;
+  text-decoration: underline;
+
+}
+#nav #en-cours a{
+    background: #B5E1EA;
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+ 
+  font-size: 10px;
+    -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-family: Raleway, sans-serif;
+}
+
+>>>>>>> e8c9774e6e26189151c1293752178ecfb0270c76
