@@ -9,7 +9,7 @@ if (isset($_POST['set'])) {
 	$base->on();
 
 	// on crée la requête SQL 
-	$sql = 'UPDATE categorie SET contenu ="'.$_POST['contenu'].'" WHERE id='.$_POST['id'].''; 
+	$sql = 'UPDATE categorie SET contenu ="'.$_POST['contenu'].'", titre ="'.$_POST['titre'].'" WHERE id='.$_POST['id'].''; 
 
 	// on envoie la requête 
 	$req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());

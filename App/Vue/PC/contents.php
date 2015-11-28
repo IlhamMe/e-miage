@@ -13,6 +13,8 @@ include("../../Controller/check_cat.php");
 		Espace collaboratif de travail
 	</title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">	
 </head>
 <body>
 <div>
@@ -23,13 +25,13 @@ include("../../Controller/check_cat.php");
 		</ul>
 	</nav>
 	<form action="../../Controller/addcat.php" method="post">
-	  Titre: <input type="text" name="titre"><br>
+	  Titre: <input type="text" name="titre">
 	  <input type="submit" value="Ajouter une catégorie">
 	</form>
 </div>
 
 <form action="contents.php" method="post">
-	<ul>
+	<ul id="cats">
 	<?php
 		// Affichage des references existante 
 		while($row = mysql_fetch_array($req)){
@@ -48,9 +50,9 @@ include("../../Controller/check_cat.php");
 			$row = mysql_fetch_array($req);
 		?>
 
-			<form action="../../Controller/check_formcat.php" method="post">
+			<form action="../../Controller/check_formcat.php" method="post" id="catform">
 				<input type="text" name="titre" value="<?php echo $row['titre'] ?>"></input><br>
-				<input type="text" name="id" value="<?php echo $row['id'] ?>"></input><br>
+				<input type="hidden" name="id" value="<?php echo $row['id'] ?>"></input><br>
 				<textarea name="contenu"><?php echo $row['contenu'] ?></textarea><br>
 				<input type="submit" name="set" value="Mettre à jour"></input><br>
 				<input type="submit" name="remove" value="Supprimer cette catégorie"></input>

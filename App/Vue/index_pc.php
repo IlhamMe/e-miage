@@ -11,6 +11,7 @@ session_start();
 		Espace collaboratif de travail
 	</title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="PC/css/style.css">
 </head>
 <body>
 <div>

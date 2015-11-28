@@ -14,6 +14,10 @@ include("../../Controller/check_ref.php");
 		Espace collaboratif de travail
 	</title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../../Modele/Jquery/jquery.autocomplete.min.js"></script>
 </head>
 <body>
 <div>
@@ -24,11 +28,15 @@ include("../../Controller/check_ref.php");
 		</ul>
 	</nav>
 	<form action="../../Controller/addref.php" method="post">
-	  Nom du document: <input type="text" name="nom"><br>
-	  Lien: <input type="text" name="lien" placeholder="http://..."><br>
-	  <input type="submit" value="Ajouter une référence">
+	  Nom du document: <input type="text" name="nom">
+	  Lien: <input type="text" name="lien" placeholder="http://...">
+	  <input type="submit" value="Ajouter une référence" id="buttonref">
 	</form>
 </div>
+
+	<form method="post" action="documents.php" id="autocomplete">
+		<input type="text" placeholder="Rechercher un document" name="rechercheNom" id="input_searchNom" onkeyup="autocomplet();">
+	</form>
 
 <table>
 	<thead>
@@ -38,7 +46,7 @@ include("../../Controller/check_ref.php");
 		<th>Date</th>
 		<th>Action</th>
 	</thead>
-	<tbody>
+	<tbody  id="search_list_id">
 <?php
 	// Affichage des references existante 
 	while($row = mysql_fetch_array($req)){

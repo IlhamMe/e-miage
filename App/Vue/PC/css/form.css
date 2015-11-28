@@ -1,0 +1,78 @@
+form#login{
+	width: 100%;
+	text-align: center;
+	margin-top: 15%;
+}
+
+form input{
+	border-radius: 5px;
+}
+
+#button{
+	text-decoration: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 12px;
+	padding-left: 12px;
+	border-radius: 8px;
+	background: #B5E1EA;
+	margin: 5px;
+	color: #242D2E;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+#buttonref{
+	text-decoration: none;
+	padding: 3px;
+	border-radius: 8px;
+	background: #e1eab5;
+	margin: 5px;
+	color: #242D2E;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+}
+
+form input{
+	background: #e1eab5;
+	border: none;
+	padding: 5px;
+}
+
+form#autocomplete{
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+form#autocomplete input{
+	width: 75%;
+	background: #e1eab5;
+	border: none;
+	padding: 5px;
+}
+
+input::-webkit-input-placeholder {
+    color:black;
+}
+ 
+input:-moz-placeholder {
+    color:black;
+}
+
+#catform{
+	width: 100%;
+	text-align: center;
+}
+
+#catform input{
+	text-align: center;
+}
+
+#catform textarea{
+	width: 500px;
+	height: 400px;
+}
