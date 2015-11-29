@@ -15,7 +15,7 @@ include("Base.php");
 
 echo "debut du test \n";
 
-$o = new Utilisateur("Hernandez", "Jean-Philippe", "jp", "", "dezhernan.jp@gmail.com");
+$o = new Utilisateur("Mestari", "Ilham", "ilham", "ilham", "ilham.mestari@gmail.com");
 
 $nom = $o->getNom();
 $prenom = $o->getPrenom();
