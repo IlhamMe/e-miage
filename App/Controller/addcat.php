@@ -9,8 +9,8 @@ if($_POST['titre'] != "")
 {
 	$o = new Categorie($_POST['titre'], "");
 
-	$titre = $o->getTitre();
-	$contenu = $o->getContenu();
+	$titre = addslashes($o->getTitre());
+	$contenu = addslashes($o->getContenu());
 
 	$base = new Base('e-miage', 'localhost', 'root', 'root');
 

@@ -1,3 +1,7 @@
+body{
+  font-size: 16px;
+}
+
 td, th{
 	border: solid;
 	border-width: 1px;
@@ -194,9 +198,6 @@ p{
   font-weight: normal;
   text-decoration: none;
   letter-spacing: 2;
- 
-<<<<<<< HEAD
-  
 }
  /*p
 {
@@ -219,9 +220,6 @@ p{
 }
 #p, #ul{
   padding-top: 20;
-  
-=======
-  
 }
  /*p
 {
@@ -244,17 +242,11 @@ p{
 }
 #p, #ul{
   padding-top: 20;
-  
->>>>>>> e8c9774e6e26189151c1293752178ecfb0270c76
   text-align: justify;
   font-size: 16;
  font-family: verdana;
   color: #626C6F;
   line-height: 1.4;
-
-<<<<<<< HEAD
-}
-=======
 }
 article{
   padding-top: 20;
@@ -291,5 +283,3 @@ h5{
   border-top-right-radius: 8px;
   font-family: Raleway, sans-serif;
 }
-
->>>>>>> e8c9774e6e26189151c1293752178ecfb0270c76

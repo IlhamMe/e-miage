@@ -59,6 +59,5 @@ include("../../Controller/check_cat.php");
 			</form>
 
 <?php } ?>
-
 </body>
 </html>
