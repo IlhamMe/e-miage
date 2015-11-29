@@ -2,7 +2,7 @@
 
 // Démarage d'une séssion utilisateur
 
-$base = new Base('e-miage', 'localhost', 'root', 'root');
+$base = new Base();
 
 $base->on();
 

@@ -12,7 +12,7 @@ if($_POST['titre'] != "")
 	$titre = addslashes($o->getTitre());
 	$contenu = addslashes($o->getContenu());
 
-	$base = new Base('e-miage', 'localhost', 'root', 'root');
+	$base = new Base();
 
 	$base->on();
 

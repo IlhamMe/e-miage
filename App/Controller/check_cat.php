@@ -4,7 +4,7 @@
 
 include("../../Modele/Base.php");
 
-$base = new Base('e-miage', 'localhost', 'root', 'root');
+$base = new Base();
 
 $base->on();
 

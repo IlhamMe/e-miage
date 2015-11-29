@@ -14,7 +14,7 @@ if($_POST['nom'] != "" and $_POST['lien'] != "")
 	$date = $o->getDate();
 	$lien = $o->getLien();
 
-	$base = new Base('e-miage', 'localhost', 'root', 'root');
+	$base = new Base();
 
 	$base->on();
 

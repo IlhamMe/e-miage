@@ -4,7 +4,7 @@ if (isset($_POST['set'])) {
 
 	include("../Modele/Base.php");
 
-	$base = new Base('e-miage', 'localhost', 'root', 'root');
+	$base = new Base();
 
 	$base->on();
 
@@ -23,7 +23,7 @@ if (isset($_POST['set'])) {
 
 	include("../Modele/Base.php");
 
-	$base = new Base('e-miage', 'localhost', 'root', 'root');
+	$base = new Base();
 
 	$base->on();
 

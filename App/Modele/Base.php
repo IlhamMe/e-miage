@@ -2,16 +2,12 @@
 
 
 class Base{
-	var $base;
-	var $host;
-	var $login;
-	var $mdp;
+	var $base = "e-miage";
+	var $host = "localhost";
+	var $login = "root";
+	var $mdp = "root";
 
-	function __construct($base, $host, $login, $mdp){
-		$this->base = $base;
-		$this->host = $host;
-		$this->login = $login;
-		$this->mdp = $mdp;
+	function __construct(){
 	}
 
 	function on(){
